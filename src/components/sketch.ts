@@ -35,8 +35,10 @@ const circle = (p: p5) => {
       }
     }
     `
+  // eslint-disable-next-line no-new-func
   const setUpFn = new Function('p', setUpStr)
   setUpFn(p)
+  // eslint-disable-next-line no-new-func
   const drawFn = new Function('p', drawStr)
   drawFn(p)
 }
